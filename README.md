@@ -5,7 +5,7 @@ Split a large OpenAPI (swagger) document into multiple files
 
 ```
 * npm install
-* npm run dev
+* npm run start
 * Open http://localhost:3000/api/docs/
 ```
 
