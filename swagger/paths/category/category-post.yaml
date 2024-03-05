@@ -1,0 +1,28 @@
+tags :
+  - Category
+summary: Save a new category
+description: Save a new category
+produces:
+  - application/json
+consumes:
+  - application/json
+parameters:
+  - in: body
+    name: body
+    description: Category object
+    required: true
+    schema:
+      type: object
+      $ref: ../../definitions/Category.yaml
+  
+responses:
+  200:
+    description: Category saved successfully
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml
+  400:
+    description: Error in saving category
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml

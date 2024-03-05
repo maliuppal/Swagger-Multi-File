@@ -1,0 +1,33 @@
+tags :
+  - Category
+summary: Update a category
+description: Update a category
+produces:
+  - application/json
+consumes:
+  - application/json
+parameters:
+  - in: path
+    name: id
+    description: Category id that needs to be updated
+    required: true
+    type: string
+  - in: body
+    name: body
+    description: Category object
+    required: true
+    schema:
+      type: object
+      $ref: ../../definitions/Category.yaml
+  
+responses:
+  200:
+    description: Category updated successfully
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml
+  400:
+    description: Error in updating category
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml

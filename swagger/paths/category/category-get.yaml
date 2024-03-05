@@ -1,0 +1,23 @@
+tags :
+  - Category
+summary: Get a category
+description: Get a category with the id specified in parameter
+produces:
+  - application/json
+parameters:
+  - in: path
+    name: id
+    description: Category id that needs to be fetched
+    required: true
+    type: string
+responses:
+  200:
+    description: Category fetched successfully
+    schema:
+      type: object
+      $ref: ../../definitions/Category.yaml
+  400:
+    description: Error in fetching category
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml

@@ -1,0 +1,25 @@
+tags :
+  - Category
+summary: Delete a category
+description: Delete a category with the id specified in parameter
+produces:
+  - application/json
+consumes:
+  - application/json
+parameters:
+  - in: path
+    name: id
+    description: Category id that needs to be deleted
+    required: true
+    type: string
+responses:
+  200:
+    description: Category deleted successfully
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml
+  400:
+    description: Error in deleting category
+    schema:
+      type: object
+      $ref: ../../definitions/CommonResponse.yaml

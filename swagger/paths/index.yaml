@@ -1,0 +1,27 @@
+# Category API
+/category:
+  get:
+    $ref: ./category/category-get.yaml
+  post:
+    $ref: ./category/category-post.yaml
+/category/{id}:
+  get:
+    $ref: ./category/category-get{id}.yaml
+  put:
+    $ref: ./category/category-put.yaml
+  delete:
+    $ref: ./category/category-delete.yaml
+
+# Product API
+/product:
+  get:
+    $ref: ./product/product-get.yaml
+  post:
+    $ref: ./product/product-post.yaml
+/product/{id}:
+  get:
+    $ref: ./product/product-get{id}.yaml
+  put:
+    $ref: ./product/product-put.yaml
+  delete:
+    $ref: ./product/product-delete.yaml
